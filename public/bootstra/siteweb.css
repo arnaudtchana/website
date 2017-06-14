@@ -1,0 +1,394 @@
+
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url('fonts/Roboto-Medium.ttf');
+
+}
+@font-face {
+    font-family: "roboto-light";
+    src: url('fonts/Roboto-Light.ttf');
+
+}
+#menu{
+    /*padding-bottom: 0px;*/
+   margin-top: 16px !important;
+    max-width: 100%;
+   float:right;
+    height: 43px !important;
+    /*margin-rigth: 0px;*/
+    padding-left: 30px;
+    /*padding-left: 30px;*/
+
+
+}
+#logo{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    /*padding-right: 50px;*/
+}
+.row{
+    /*margin-right: 0px;*/
+
+}
+
+#contenu_page{
+   /*background-image:url(img/admin_img/CARE-%20Web-02.png);
+
+    background-repeat:no-repeat;
+    background-attachment: fixed;*/
+}
+
+@font-face {
+    font-family: "roboto-light";
+    src: url('fonts/RobotoCondensed-Light.ttf');
+
+}
+#pied{
+    /*
+    background-image:url(img/admin_img/CARE-%20Web_PIED%20DE%20PAGE.png);
+    background-image:url(img/admin_img/Pied_de_Page.png);*/
+    background-color: black;
+    /*padding-right: 5%;
+    padding-left: 5%;*/
+    margin-top:12%;
+    /*background-repeat:no-repeat;
+    position: relative;*/
+    /*top:81%;*/
+    /*bottom: 0%;*//*permet de fixer le pied de page bien en bas dee la page*/
+    right: 0%;/*ne pas d'espace entre le bord droit et le pied de page*/
+
+    /*background-attachment: fixed;*/
+    max-width: 100%;
+    height: auto;
+    /*margin-top:10%;
+   /* padding-top:100px;*/
+    min-height: 60px;
+    font-family: roboto-light;
+    /*position: absolute;*/ /*permet d'enlever le srcoll et de fixer le pied de page au bas de la page*/
+
+
+    /*font-family: roboto-light;*/
+    /*font-weight: 12pt;*/
+    /*color:white;*/
+
+
+}
+
+.texte_pied{
+    margin-top: 20px;
+    text-align: center;/*il faut centrer le texte pour permettre de faciliter le positionnement dans le pied de page*/
+    /*border: solid 1px;*/
+
+
+}
+
+.img{
+   /* margin-right:50px;*/
+    /*min-width: 2000px;
+    height: auto;
+
+    margin-right:0px;
+    padding:0;*/
+
+   /* margin-top:15px;*/
+    background-color: #E6E6FA;
+    max-width:100%;
+
+    min-height: 60px;
+
+   /* padding-right: 100px;*/
+}
+html{
+   /*width:inherit;*/
+    margin:0;
+    padding:0;
+}
+#recherche{
+    background-image:url(img/admin_img/CARE-%20Web_LOUP.png);
+    background-repeat:no-repeat;
+    /*background-position: left, right;*/
+    background-position: left;
+   /* border: 4px;*/
+    /*border-radius: 10px;*/
+   /* background-image:url(bootstra/img/admin_img/CARE-%20Web_LOUP.png);*/
+}
+
+
+.container{
+    /* width:100%;*/
+margin:0;
+    padding:0;
+}
+
+.nav-pills>a:hover{
+    /*width:auto ;*/
+    /*height:50px ;*/
+   /* color: red;*/
+}
+
+.nav-pills>li>a:hover{
+    /*niveau de rondeur du cadre entourant le lien de menu*/
+    /*faire un choix entre le border-radius ci-dessous et celui de 5px*/
+    color: white;
+    background-color: #33CCFF; /*permet de retirer le fond qui apparait lorskon survol le lien*/
+    opacity: 1;
+    border:none;
+}
+/*on de finit une marge entre les elements li*/
+.nav-pills>li{
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+}
+
+.active{
+
+    color: white;
+    background-color: #33CCFF; /*permet de retirer le fond qui apparait lorskon survol le lien*/
+    opacity: 1;
+    border:none;
+
+
+}
+
+a{
+    /*margin-bottom: 10px;*/
+    color: #33CCFF;
+    opacity:1;
+    font-family: Roboto;
+    /*font-size: 14pt;*/
+   /* font-family: roboto-medium;*/
+    /*padding-top: 3px;*/
+   /*padding-bottom: 10px;*/
+
+
+
+}
+input[type="text"]:focus {
+    /*On décolle le curseur de la gauche du champ*/
+    /*border-radius: 5px;*/
+    box-shadow: none;
+    border-color: #33CCFF;
+    /*border-color: red;*/
+}
+
+input[type="textarea"]:focus {
+    box-shadow: none;
+    border-color: #33CCFF;
+}
+
+input{
+    font-family: Roboto;
+
+}
+body{
+    /*overflow: hidden;/*permet de mettre l'image a la taille de la fenetre et de supprimer le superflu*/
+}
+#form_espace{
+    padding-left: 0px;
+    margin-left: 70px;
+    /*padding-right: 0px;*/
+}
+
+.col-md-12{
+    width:100%;
+}
+
+::-webkit-input-placeholder {
+    text-align: left;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: left;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: left;
+}
+
+:-ms-input-placeholder {
+    text-align: left;
+}
+
+/*permet de bien positionner le message de bienvenu du medecin sur la page d'accueil*/
+
+.salut_medecin{
+    margin: 3% 10% auto;
+    font-family: Roboto;
+    font-size: 20pt;
+}
+
+#line{
+    margin-top:-4px;
+
+}
+#liens{
+    margin-top: 6%;
+    margin-left: 9%;
+    margin-right: 9%;
+    width: 82%;
+   /* border: solid 1px;*/
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+p{
+    /*border: solid 1px;*/
+    /*text-align: center;*/
+    font-family: Roboto;
+    /*font-family: roboto-light;*/
+    /*font-size: 18pt;*/
+}
+/*ici le code de ce qui se passe au survol de la div*/
+
+
+.rapproche{
+    /*permet de gerer la distance entre le champ input du formulaire et le bouton de soumission*/
+
+    padding-left: 60px;
+    height: 34px;
+    width: 33%;
+    display: inline;
+}
+
+.rapproche:focus{
+    /*permet de gerer la distance entre le champ input du formulaire et le bouton de soumission*/
+    /*border: none;*/
+   border-color:#e53935 !important;
+    /*border: none;*/
+    box-shadow: none;
+    border-radius: 5px;
+    /*border-radius: 5px;*/
+
+}
+
+#form_position{
+    margin-top: 100px;
+    padding-top: 45px;
+    /*border: solid 1px;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+
+
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+}
+
+.btn{
+    margin-left: 40px;
+    width:100px;
+    background-color: #33CCFF;
+    border: none;
+    color: white;
+}
+
+.btn:hover{
+    margin-left: 40px;
+    width:100px;
+    border:solid 1px;
+    background-color: #FFFFFF;
+    color:#33CCFF;
+    border-color: #33CCFF;
+    font-family: roboto-medium;
+}
+.btn:focus:active{
+    margin-left: 40px;
+    width:100px;
+    /*border:solid 1px;*/
+    box-shadow: none;
+    /*border: none;*/
+    background-color: #FFFFFF;
+    color:#33CCFF;
+    border-color: #33CCFF;
+    font-family: roboto-medium;
+    /*outline: none;*/
+
+}
+
+.position_footer{
+    /*div contenant notre de formiulaire d'authentification de l'utilisateur*/
+    padding-bottom: 5%;
+    padding-top: 5%;
+    /*border: solid 2px;*/
+    margin-bottom: 20%;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    width:70% ;
+}
+input[type="submit"]:focus:active{
+   /* outline: none;*/
+}
+
+
+.descend{
+    /*permet de mettre une marge superieur pour les deux div presentes dans la page du patient*/
+    margin-top: 2%;
+    padding-bottom: 0%;
+}
+
+/*ici on fait le style de la partie contenant l'interieur de la page de presentation des maladies*/
+.nom{
+border-bottom: dashed 1px;
+    min-height: 30px;
+    padding-left: 8px;
+    margin-left: -11px;
+
+}
+
+#contenu_patient .col-md-1{
+    /*ce css va s'appiquer a tous les col-md-1 se trouvant */
+    padding-left: 1px;
+    font-family: roboto-light;
+}
+
+.col-md-11{
+    font-family: roboto-medium;
+}
+.col-md-12{
+    padding-left: 0px;
+}
+.commentaire p{
+    font-family: roboto-light;
+    font-size: 12pt;
+    margin: 0 0 -17px;
+    padding-left: 8px;
+    margin-left: -11px;
+}
+
+.form-control:focus .control-label:focus{
+    border-color:#33CCFF;
+    outline:0px;
+    box-shadow: none;
+}
+
+
+
+    /*permet de positionner le bouton d'enregistrement d'une nouvelle maladie sur un patient dans la base de donnee */
+
+
+input:focus{
+    background-color: white;
+}
+
+
+
+
+
+
+ul{
+    /*permet de definir la taille du menu et eviter que la barre rouge du bas ne se deplace au clic*/
+    height: 42px !important;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.trait{
+    border-top:2px solid #33CCFF;
+}

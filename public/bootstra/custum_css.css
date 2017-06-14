@@ -1,0 +1,186 @@
+.container{
+
+    /*height: 1000px;*/
+
+    /*background-position: center;*/
+}
+
+@font-face {
+    font-family: "roboto-light";
+    src: url('fonts/Roboto-Light.ttf');
+
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url('fonts/Roboto-Bold.ttf');
+
+}
+@font-face {
+    font-family: "roboto-medium";
+    src: url('fonts/Roboto-Medium.ttf');
+
+}
+body{
+    /*background-repeat:no-repeat;
+    !*background-attachment: fixed;*!
+    align-content: center;
+*/
+    background-image:url(img/ACCEUIL/care%60_0006_1-BACK-GROUND.png);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+.contient{
+    /*border:solid 4px;*/
+    margin-left:10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#espace {
+    margin-top:40px;
+    margin-bottom: 50px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right:30%;
+    margin-left: 30%;
+    width: 40%;
+    max-height: 100px;
+
+    background-color: #e53935;
+
+
+    /*background-image: url(bootstra/img/ACCEUIL/care%60_0000_2-LOGO.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;*/
+}
+
+#login {
+    padding-right: 25px;
+}
+
+#famille {
+    /*font-family: Roboto;*/
+    padding-top: 50px;
+    font-family: roboto;
+    color:white;
+    width:100%;
+    margin-left: 20%;
+
+
+}
+
+.ici_form {
+
+    padding-top: 0.5%;
+    max-height: 300px;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: #c5f0a5;/*redefinir cette couleur sans avoir un impact sur l'opacite*/
+    /*opacity : 0.5;*/
+    border: none;
+    border-radius: 5px;
+
+    /*max-width: 370px;
+    max-height: 330px;*/
+    /*position: center;
+    /*padding-right: 20px;*/
+	/*background-image : url(XMLID_62_.png);
+	background-repeat : no-repeat;
+
+	position : absolute ;
+	left : 1081px;
+	top : 33px;
+	width : 200px;
+	height : 200px;
+	filter: alpha(opacity=54) progid:DXImageTransform.Microsoft.Alpha(opacity=54) ;*/
+}
+
+#tof {
+    margin-top: 30px;
+    width: 80%;
+    /*border: none;*/
+    font-family: roboto-light;
+    margin-left: 10%;/*apprendre a definir les tailles et les espaces en pourcentage*/
+    margin-right: 10%;
+
+}
+
+#tof_deux {
+    /*border: none;*/
+    margin-bottom: 20px ;
+    width: 80%;
+    font-family: roboto-light;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#bouton{
+    width: 80%;
+    margin-bottom: 50px;
+    color: #e53935;
+    font-family: roboto-medium;
+    /*opacity: 1;*/
+
+}
+
+#link{
+    text-align: center;
+    margin-bottom:7px ;
+    font-size: 8pt;
+}
+
+#link a{
+    /*permet d'ajouter un espace entre les deux liens de menu presents dans la div*/
+    padding: 0 10px;
+    font-family: roboto-medium;
+}
+.btn{
+    background-color: white;
+}
+.btn:hover {
+
+    background-color:#e53935;
+}
+#bouton:hover {
+    color: white;
+}
+
+html {
+    /* width:100%;*/
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 80%;
+
+   /*permet de mettre l'image a la taille de la fenetre et de supprimer le superflu*/
+
+}
+input[type="text"]:focus {
+    /*On décolle le curseur de la gauche du champ*/
+    /*padding-left: 40px;*/
+    /*border-radius: 5px;*/
+    box-shadow: none;
+    border-color: #e53935;
+    font-family: roboto-light;
+    font-weight: bold;
+    /*border-color: red;*/
+}
+input[type="password"]:focus {
+    /*On décolle le curseur de la gauche du champ*/
+    /*padding-left: 40px;*/
+    /*border-radius: 5px;*/
+    box-shadow: none;
+    font-weight: bold;
+    border-color: #e53935;
+    /*border-color: red;*/
+}
+
