@@ -12,33 +12,33 @@
     <div class="row" style="margin-top: 30px;padding-left: 4%;padding-right: 4%">
         <div class="col-md-3 text-center">
             <img src={{URL::asset("bootstra/img/icon2.png")}}>
-            <h6>APPLICATIONS WEB</h6>
+            <h4>{{trans('messages.application_web')}}</h4>
             <hr style="border-top: 2px solid #33CCFF;">
-            <p style="font-size: 14pt;text-align: justify">Pour cette semaine, il est prévu de finir avec les tâches Ios du projet africare (si le compte apple developper est bien disponible) ; il sera également question d’optimiser les codes
+            <p style="font-size: 12pt;text-align: justify">{{trans('messages.nos_services_texte_3')}}
             <a href="#" style="text-decoration: none">lire...</a>
             </p>
         </div>
         <div class="col-md-3 text-center">
             <img src={{URL::asset("bootstra/img/icon3.png")}}>
-            <h6>APPLICATIONS MOBILE</h6>
+            <h4>{{trans('messages.application_mobile')}}</h4>
             <hr style="border-top: 2px solid #33CCFF;">
-            <p style="font-size: 14pt;text-align: justify">Pour cette semaine, il est prévu de finir avec les tâches Ios du projet africare (si le compte apple developper est bien disponible) ; il sera également question d’optimiser les codes
+            <p style="font-size: 12pt;text-align: justify">{{trans('messages.nos_services_texte_2')}}
                 <a href="#" style="text-decoration: none">lire...</a>
             </p>
         </div>
         <div class="col-md-3 text-center">
             <img src={{URL::asset("bootstra/img/icon1.png")}}>
-            <h6>CREATION GRAPHIQUE</h6>
+            <h4>{{trans('messages.creation_graphic')}}</h4>
             <hr style="border-top: 2px solid #33CCFF;">
-            <p style="font-size: 14pt;text-align: justify">Pour cette semaine, il est prévu de finir avec les tâches Ios du projet africare (si le compte apple developper est bien disponible) ; il sera également question d’optimiser les codes
+            <p style="font-size: 12pt;text-align: justify">{{trans('messages.nos_services_texte_1')}}
                 <a href="#" style="text-decoration: none">lire...</a>
             </p>
         </div>
         <div class="col-md-3 text-center">
             <img src={{URL::asset("bootstra/img/icon5.png")}}>
-            <h6>MARKETING DIGITAL</h6>
+            <h4>{{trans('messages.digital_marketing')}}</h4>
             <hr style="border-top: 2px solid #33CCFF;">
-            <p style="font-size: 14pt;text-align: justify">Pour cette semaine, il est prévu de finir avec les tâches Ios du projet africare (si le compte apple developper est bien disponible) ; il sera également question d’optimiser les codes
+            <p style="font-size: 12pt;text-align: justify">{{trans('messages.nos_services_texte_4')}}
                 <a href="#" style="text-decoration: none">lire...</a>
             </p>
         </div>

@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href={{URL::asset("bootstra/siteweb.css")}} media="all"/>
     {{--<link rel="stylesheet" type="text/css" href={{URL::asset("bootstra/css/style.css")}} media="all"/>--}}
     <link href='https://fonts.googleapis.com/css?family=roboto' rel='stylesheet'type='text/css' />
+    <link rel="shortcut icon" href="{{URL::asset('icon.ico') }}">
     {{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>--}}
     {{--<script src={{URL::asset("bootstra/js/jquery-2.2.1.min.js")}}></script>--}}
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -77,16 +78,18 @@
     <!--ici la ligne contenant les differents contacts du site-->
     <div class="row">
         <div class="col-md-offset-1 col-md-2"><span class="glyphicon glyphicon-earphone"></span> (+237) 690 12 60 98</div>
-        <div class="col-md-2"><span class="glyphicon glyphicon-envelope"></span> info@brigthcode.com</div>
+        <div class="col-md-2"><span class="glyphicon glyphicon-envelope"></span> info@brigthcodegroup.com</div>
         <div class="col-md-offset-4 col-md-2 text-right">
-            <a style="text-decoration: none;color:black" href="#">En <span class="flag-icon flag-icon-gb flag-icon-squared"></span></a>
+            <a style="text-decoration: none;color:black" href="{{action('InternationalisationCtrl@change_langue_en')}}">{{trans('messages.anglais')}} {{--<span class="flag-icon flag-icon-gb flag-icon-squared"></span>--}}</a>
             |
-            <a style="text-decoration: none;color:black" href="#">Fr <span class="flag-icon flag-icon-fr flag-icon-squared"></span></a>
+            <a style="text-decoration: none;color:black" href="{{action('InternationalisationCtrl@change_langue_fr')}}">{{trans('messages.francais')}} {{--<span class="flag-icon flag-icon-fr flag-icon-squared"></span>--}}</a>
         </div>
     </div>
     <div class="row fixer">
-
-        <div class="col-md-offset-3 col-md-7" id="menu">
+        <div class="col-md-offset-1 col-md-3">
+            <img style="height: 60px" src={{URL::asset("bootstra/img/logo_horizontal.png")}}>
+        </div>
+        <div class="col-md-offset-1 col-md-7" id="menu">
             <nav >
                 <ul class="nav nav-pills">
                     <li style="margin-left: 5%;">
@@ -116,7 +119,14 @@
         </div>
 
         <!--image dentete-->
-        <div class="img col-md-12"></div>
+        <div class="img col-md-12">
+            <div class="col-md-offset-4 col-md-4 text-center">
+                <h2 style="color:white">{{strtoupper(trans('messages.'.Session::get('lien')))}}</h2>
+
+                <h5><span style="color:white">{{trans('messages.accueil')}} ></span> {{trans('messages.'.Session::get('lien'))}}</h5>
+            </div>
+
+        </div>
 
 
     </div>

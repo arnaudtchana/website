@@ -49,5 +49,7 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'langue' => \App\Http\Middleware\langue::class,
+        'lien' => \App\Http\Middleware\NomLien::class,
     ];
 }

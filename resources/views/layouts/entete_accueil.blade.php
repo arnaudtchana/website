@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href={{URL::asset("bootstra/siteweb.css")}} media="all"/>
     {{--<link rel="stylesheet" type="text/css" href={{URL::asset("bootstra/css/style.css")}} media="all"/>--}}
     <link href='https://fonts.googleapis.com/css?family=roboto' rel='stylesheet'type='text/css' />
+    <link rel="shortcut icon" href="{{URL::asset('icon.ico') }}">
     {{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>--}}
     {{--<script src={{URL::asset("bootstra/js/jquery-2.2.1.min.js")}}></script>--}}
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -34,7 +35,7 @@
 
 
     {{--{!!Html::style('bootstra/custum_admin.css')!!}--}}
-    <title>Administrateur</title>
+    <title>BrightCode</title>
     <script>
         (function($){
             $(window).load(function(){
@@ -77,17 +78,17 @@
     <!--ici la ligne contenant les differents contacts du site-->
     <div class="row" style="background-color: #f7f7f7">
         <div class="col-md-offset-1 col-md-2"><span class="glyphicon glyphicon-earphone"></span> (+237) 690 12 60 98</div>
-        <div class="col-md-2"><span class="glyphicon glyphicon-envelope"></span> info@brigthcode.com</div>
+        <div class="col-md-2"><span class="glyphicon glyphicon-envelope"></span> info@brigthcodegroup.com</div>
         <div class="col-md-offset-4 col-md-2 text-right">
-            <a style="text-decoration: none;color:black" href="#">En <span class="flag-icon flag-icon-gb flag-icon-squared"></span></a>
+            <a style="text-decoration: none;color:black" href="{{action('InternationalisationCtrl@change_langue_en')}}">{{trans('messages.anglais')}} {{--<span class="flag-icon flag-icon-gb flag-icon-squared"></span>--}}</a>
             |
-            <a style="text-decoration: none;color:black" href="#">Fr <span class="flag-icon flag-icon-fr flag-icon-squared"></span></a>
+            <a style="text-decoration: none;color:black" href="{{action('InternationalisationCtrl@change_langue_fr')}}">{{trans('messages.francais')}} {{--<span class="flag-icon flag-icon-fr flag-icon-squared"></span>--}}</a>
         </div>
     </div>
     <div class="row fixer">
 
-        <div class="col-md-offset-2 col-md-2">
-            <img style="height: 60px;width: 60px" src={{URL::asset("bootstra/img/logo.jpg")}}>
+        <div class="col-md-offset-1 col-md-3">
+            <img style="height: 60px" src={{URL::asset("bootstra/img/logo_horizontal.png")}}>
         </div>
         <div class="col-md-offset-1 col-md-7" id="menu">
             <nav >
@@ -122,6 +123,7 @@
         {{--<div class="img col-md-12"></div>--}}
 
 
+
     </div>
 
     <!--fin du menu de la page-->
@@ -131,7 +133,7 @@
 
 <!--ici le pied de page-->
 
-    <div class="col-md-12 text-center" id="pied">
+    <div class="col-md-12 text-center" id="pied" style="margin-top:0px">
         <p style="color:white;font-size: 8pt;padding-top: 30px">&copy;Juin 2017 tous droits réservés | BrigthCode- We design your digital life</p>
 
     </div>
